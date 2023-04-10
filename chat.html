@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kokoa Ttalk - chat</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="chat-screen">
+    <div class="wrap">
+        <div class="kokoa-layout kokoa-chat">
+            <div class="status-bar">
+                <div class="status-bar__column">
+                    <span class="fs-xs">No Service</span>
+                    <i class="fas fa-wifi"></i>
+                </div>
+                <div class="status-bar__column">
+                    <span class="fs-xs">18:43</span>
+                </div>
+                <div class="status-bar__column">
+                    <span class="fs-xs">110%</span>
+                    <i class="fas fa-battery-quarter fa-lg"></i>
+                    <i class="fas fa-bolt"></i>
+                </div>
+            </div>
+
+            <header class="alt-header">
+                <div class="alt-header__column">
+                    <i class="far fa-angle-left fa-2x" onclick="javascript:history.back();"></i>
+                </div>
+                <div class="alt-header__column">
+                    <h1 class="alt-header__title fs-title">Yura</h1>
+                </div>
+                <div class="alt-header__column">
+                    <i class="fas fa-search fa-lg"></i>
+                    <i class="fas fa-bars fa-lg"></i>
+                </div>
+            </header>
+
+            <main class="main-screen main-chat">
+                <div class="chat__timestamp">
+                    <span class="fs-xs">Tuesday, April 10, 2023</span>
+                </div>
+                <!-- message -->
+                <div class="message-row">
+                    <img src="img/pf_img.png" />
+                    <div class="message-row__content">
+                        <span class="message__name">Yura</span>
+                        <div class="message__info">
+                            <span class="message__buble">이제 그만 자러가자 ~</span>
+                            <div class="message__end">
+                                <span class="message__buble">제발 ~</span>
+                                <span class="message__time fs-xs">12:10</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- message -->
+                <div class="message-row">
+                    <img src="img/pf_img.png" />
+                    <div class="message-row__content">
+                        <span class="message__name">Yura</span>
+                        <div class="message__info">
+                            <div class="message__end">
+                                <span class="message__buble">메세지를 길게 길게 길게 길게 길게 더 길게 한 번 써볼까요 ?</span>
+                                <span class="message__time fs-xs">12:32</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- message--own -->
+                <div class="message-row message-row--own">
+                    <div class="message-row__content">
+                        <div class="message__info">
+                            <div class="message__end">
+                                <span class="message__buble">끄읏 ...</span>
+                                <span class="message__time fs-xs">12:45</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- form -->
+            <form class="reply">
+                <div class="reply__column">
+                    <i class="far fa-plus-square fa-lg"></i>
+                </div>
+                <div class="reply__column">
+                    <input type="text" placeholder="Write a message...">
+                    <i class="far fa-kiss-wink-heart fa-lg"></i>
+                    <button>
+                        <i class="fas fa-arrow-up"></i>
+                    </button>
+                </div>
+            </form>
+
+            <div id="no-mobile">
+                <span>Your screen is too big ㅜ.ㅜ</span>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

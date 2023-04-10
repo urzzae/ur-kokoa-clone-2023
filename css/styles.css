@@ -1,0 +1,66 @@
+/* common */
+@import "reset.css";
+@import "variables.css";
+
+/* components */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/alt-screen-header.css";
+@import "components/screen-header.css";
+@import "components/user-components.css";
+@import "components/badge.css";
+@import "components/common-tit.css";
+@import "components/icon-row.css";
+@import "components/no-mobile.css";
+
+/* screens */
+@import "screens/kokoa--login.css";
+@import "screens/kokoa--friends.css";
+@import "screens/kokoa--find.css";
+@import "screens/kokoa--more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
+
+/* webfonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Sans+TC:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* ---------- global ---------- */
+body, a, input, textarea { font-family:'Roboto', 'Noto Sans JP', 'Noto Sans TC', 'Pretendard-Regular', sans-serif; font-size:14.5px; color:#222222; line-height:1.4; word-wrap:break-word; }
+.fs-xs { font-size: 11px; }
+.fs-md { font-size: 16px; }
+.fs-lg { font-size: 22px; }
+.fs-title { font-size: 25px; }
+
+/* ---------- layout ---------- */
+.wrap {
+    background-color: #fff;
+    /* display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; */
+}
+.kokoa-layout {
+    /* width: 460px;
+    height: 560px; */
+    padding: 15px 12px 65px 12px;
+    /* border: 1px solid #e8e8e8; */
+}
+.circle-point {
+    position: relative;
+}
+.circle-point::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: tomato;
+    border-radius: 50%;
+    position: absolute;
+}

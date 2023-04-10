@@ -1,0 +1,11 @@
+:root {
+    --def: #222222;
+    --yellow: #fae100;
+    --gray: #dbdbdb;
+    --lightGray: #f2f2f2;
+    --deepGray: #bdbdbd;
+
+    --horizontal-space: 25px;
+    --main-border: 1px solid var(--gray);
+    --light-border: 1px solid var(--lightGray);
+}

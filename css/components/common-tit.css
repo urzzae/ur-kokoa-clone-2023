@@ -1,0 +1,25 @@
+/* common-tit */
+.common-tit {
+    padding: 15px 15px 0 15px;
+    border-top: var(--main-border);
+}
+.common-tit h6 {
+    color: var(--deepGray);
+    font-weight: bold;
+}
+.common-tit__flex {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+.common-tit__flex a {
+    color: var(--deepGray);
+    transition: color .15s ease-in-out;
+}
+.common-tit__flex a:hover {
+    color: var(--def);
+}
+.common-tit__flex i {
+    padding-left: 3px;
+    vertical-align: middle;
+}

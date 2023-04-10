@@ -1,0 +1,5 @@
+/* kokoa-more */
+.kokoa-more .circle-point::before {
+    top: -3px;
+    right: -8px;
+}

@@ -1,0 +1,54 @@
+/* kokoa-login */
+.kokoa-login .welcome-hd {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column;
+    margin: 85px 0 35px 0;
+}
+.kokoa-login .welcome-hd-title {
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.kokoa-login .welcome-hd-desc {
+    text-align: center;
+    width: 60%;
+}
+.kokoa-login #login-form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 35px;
+}
+.kokoa-login #login-form input {
+    padding: 10px 8px;
+    border: 0;
+    font-size: 1.125rem;
+}
+.kokoa-login #login-form input:not([type="submit"]) {
+    border-bottom: var(--light-border);
+    transition: border-color .3s ease-in-out;
+    margin-bottom: 15px;
+}
+.kokoa-login #login-form input:not([type="submit"])::placeholder {
+    color: var(--gray);
+}
+.kokoa-login #login-form input:not([type="submit"]):focus {
+    border-color: var(--yellow);
+}
+.kokoa-login #login-form input[type="submit"] {
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: background-color .3s ease-in-out;
+    margin-bottom: 8px;
+}
+.kokoa-login #login-form input[type="submit"].active, .kokoa-login #login-form input[type="submit"]:hover {
+    background-color: var(--yellow);
+}
+.kokoa-login #login-form a {
+    text-align: center;
+    display: inline-block;
+    color: var(--gray);
+    margin-top: 5px;
+}

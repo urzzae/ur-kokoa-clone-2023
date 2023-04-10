@@ -1,0 +1,27 @@
+/* screen-header */
+.screen-hd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--horizontal-space);
+}
+.screen-hd .screen-hd__title {
+    font-weight: bold;
+}
+.screen-hd .screen-hd__icons span {
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+/* animation */
+.screen-hd__icons .fa-cog:hover {
+    animation: rotateCog 1.5s linear infinite;
+}
+@keyframes rotateCog {
+    from {
+        transform: none;
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}

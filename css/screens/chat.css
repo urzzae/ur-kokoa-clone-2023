@@ -1,0 +1,186 @@
+/* chat */
+#chat-screen {
+    background-color: #abc1d1;
+    height: 500vh;
+}
+#chat-screen .wrap, #chat-screen .status-bar, #chat-screen .alt-header {
+    background: rgba(171,193,209,.85);
+}
+
+#chat-screen .alt-header {
+    position: fixed;
+    width: 100%;
+    top: 10px;
+    left: 0;
+}
+#chat-screen .kokoa-layout {
+    padding-top: 95px;
+}
+
+/* chat__timestamp */
+.kokoa-chat .chat__timestamp {
+    text-align: center;
+    margin-bottom: 25px;
+}
+.kokoa-chat .chat__timestamp span {
+    display: inline-block;
+    padding: 8px 18px;
+    background: rgba(0,0,0,.15);
+    border-radius: 30px;
+    color: #fff;
+}
+
+/* message */
+.kokoa-chat .message-row {
+    width: 100%;
+    display: flex;
+    margin-bottom: 25px;
+}
+.kokoa-chat .message-row img {
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.kokoa-chat .message-row__content {
+    width: 100%;
+    margin-left: 8px;
+}
+.kokoa-chat .message-row__content .message__name, .kokoa-chat .message-row__content .message__time {
+    opacity: .65;
+}
+.kokoa-chat .message__info {
+    display: flex;
+    flex-direction: column; 
+    align-items: baseline; 
+}
+.kokoa-chat .message__name {
+    display: inline-block;
+    margin: 5px 0;
+}
+.kokoa-chat .message__buble {
+    display: inline-block;
+    max-width: 80%;
+    padding: 12px 16px 12px 18px;
+    border-radius: 5px 25px 25px 5px;
+    background: #fff;
+    margin-bottom: 8px;
+}
+.kokoa-chat .message__end {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+.kokoa-chat .message__end .message__buble {
+    border-radius: 5px 25px 25px 25px;
+    margin-bottom: 0;
+}
+.kokoa-chat .message__end .message__time {
+    padding: 0 8px;
+}
+
+.kokoa-chat .message-row--own .message__info, .message-row--own .message__end {
+    justify-content: flex-end;
+}
+.kokoa-chat .message-row--own .message__end .message__buble {
+    order: 1;
+}
+.kokoa-chat .message-row--own .message__end .message__buble {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 25px;
+    background-color: var(--yellow);
+}
+
+/* form - reply */
+.reply {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 25px;
+    transition: transform .3s ease-in-out;
+}
+.reply .reply__column:first-child {
+    width: 10%;
+}
+.reply .reply__column:first-child > i {
+    font-size: 22px;
+    line-height: 22px;
+    opacity: .45;
+    cursor: pointer;
+}
+.reply .reply__column:first-child > i:hover {
+    opacity: 1;
+}
+.reply .reply__column:last-child {
+    width: 90%;
+    border: var(--main-border);
+    padding: 10px 85px 10px 15px;
+    background-color: var(--lightGray);
+    border-radius: 30px;
+    position: relative;
+}
+.reply .reply__column:last-child > i, .reply .reply__column:last-child > button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.reply .reply__column:last-child > i {
+    right: 55px;
+    font-size: 22px;
+    opacity: .45;
+    cursor: pointer;
+}
+.reply .reply__column:last-child > i:hover {
+    opacity: 1;
+}
+.reply .reply__column:last-child > button {
+    right: 5px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--yellow);
+    border: var(--main-border);
+}
+.reply .reply__column input {
+    width: 100%;
+    border: 0;
+    background: none;
+}
+.reply .reply__column input:focus {
+    overflow: none;
+}
+
+/* chat animation */
+#chat-screen main {
+    animation: fadeIn .35s linear;
+}
+@keyframes fadeIn {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* form animation */
+.reply:focus-within .reply__column:first-child, .reply:focus-within .fa-kiss-wink-heart, .reply:focus-within button {
+    /* reply 내부에 어떤 엘리먼트가 포커스 되어있을 경우 */
+    visibility: hidden;
+    width: 0;
+}
+.reply .reply__column:last-child {
+    transition: all .3s ease-in-out;
+}
+.reply:focus-within .reply__column:last-child {
+    width: 100%;
+    transform: translateY(-80px);
+}
+.reply:focus-within {
+    transform: translateY(80px);
+}

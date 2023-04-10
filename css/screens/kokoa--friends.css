@@ -1,0 +1,57 @@
+/* kokoa--friends */
+#friends-display-link {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+    background-color: var(--lightGray);
+    margin-bottom: var(--horizontal-space);
+    margin-top: -10px;
+}
+#friends-display-link i {
+    color: var(--deepGray);
+}
+#friends-display-link span {
+    padding: 0 8px;
+}
+.friends-screen__channel {
+    margin-top: 25px;
+    border-top: var(--main-border);
+}
+.friends-screen__channel .friends-screen__channel-hd {
+    padding: 15px 15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--deepGray);
+}
+.friends-screen__channel .friends-screen__channel-hd span {
+    font-weight: bold;
+}
+
+#splash-screen {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 132px;
+    animation: hideSplashScreen 0.3s ease-in-out forwards;
+    animation-delay: 1.5s;
+}
+@keyframes hideSplashScreen {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}

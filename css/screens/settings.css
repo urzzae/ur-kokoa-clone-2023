@@ -1,0 +1,30 @@
+/* kokoa-settings */
+.kokoa-settings .settings-list:not(:last-child) {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: var(--main-border);
+}
+.kokoa-settings .settings__setting {
+    padding: 20px 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15px;
+}
+.kokoa-settings .settings__setting:hover span {
+    font-weight: bold;
+}
+.kokoa-settings .settings__setting:not(:last-child) {
+    border-bottom: var(--light-border);
+}
+.kokoa-settings .settings__setting-column {
+    display: flex;
+    align-items: center;
+}
+.kokoa-settings .settings__setting-column:last-child {
+    opacity: .5;
+}
+.kokoa-settings .settings__setting-column span {
+    display: inline-block;
+    padding-left: 15px;
+}

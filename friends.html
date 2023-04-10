@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kokoa Ttalk - Friends</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="kokoa-layout kokoa-friends">
+            <div class="status-bar">
+                <div class="status-bar__column">
+                    <span class="fs-xs">No Service</span>
+                    <i class="fas fa-wifi"></i>
+                </div>
+                <div class="status-bar__column">
+                    <span class="fs-xs">18:43</span>
+                </div>
+                <div class="status-bar__column">
+                    <span class="fs-xs">110%</span>
+                    <i class="fas fa-battery-quarter fa-lg"></i>
+                    <i class="fas fa-bolt"></i>
+                </div>
+            </div>
+
+            <header class="screen-hd">
+                <h1 class="screen-hd__title fs-title">Friends</h1>
+                <div class="screen-hd__icons">
+                    <span><i class="fas fa-search fa-lg"></i></span>
+                    <span><i class="far fa-music fa-lg"></i></span>
+                    <span onclick="location.href='settings.html'"><i class="far fa-cog fa-lg"></i></span>
+                </div>
+            </header>
+
+            <a href="#" id="friends-display-link">
+                <i class="fas fa-info-circle fa-xs"></i> <span class="fs-xs">Friends' Names Display</span> <i class="fas fa-chevron-right fa-xs"></i>
+            </a>
+
+            <main class="friends-screen">
+                <div class="user-component">
+                    <div class="user-component__column">
+                        <img src="img/pf_img.png" class="user-component__pf user-component__pf--lg" />
+                        <div class="user-component__txt">
+                            <h4 class="user-component__title fs-md">yura</h4>
+                            <span class="user-component__subtitle fs-xs">hello</span>
+                        </div>
+                    </div>
+                    <div class="user-component__column"></div>
+                </div>
+                <div class="friends-screen__channel">
+                    <div class="friends-screen__channel-hd">
+                        <span class="fs-xs">Channel</span> <i class="fas fa-chevron-up fa-xs"></i>
+                    </div>
+                    <div class="user-component">
+                        <div class="user-component__column">
+                            <img src="img/kakao.png" class="user-component__pf user-component__pf--sm" />
+                            <div class="user-component__txt">
+                                <h4 class="user-component__title fs-md">KokoaTalk</h4>
+                            </div>
+                        </div>
+                        <div class="user-component__column user-component__info">
+                            <div>
+                                <span class="fs-xs">2</span>
+                                <i class="fas fa-chevron-right fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__btn">
+                        <a class="nav__link" href="friends.html"><i class="fas fa-user fa-lg"></i></a>
+                    </li>
+                    <li class="nav__btn">
+                        <a class="nav__link" href="chats.html">
+                            <span class="badge nav__notification fs-xs">1</span>
+                            <i class="far fa-comment fa-lg"></i>
+                        </a>
+                    </li>
+                    <li class="nav__btn">
+                        <a class="nav__link" href="find.html">
+                            <i class="far fa-search fa-lg"></i>
+                        </a>
+                    </li>
+                    <li class="nav__btn">
+                        <a class="nav__link circle-point" href="more.html"><i class="far fa-ellipsis-h fa-lg"></i></a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id="splash-screen">
+                <i class="fas fa-comment"></i>
+            </div>
+
+            <div id="no-mobile">
+                <span>Your screen is super big ㅜ.ㅜ</span>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
